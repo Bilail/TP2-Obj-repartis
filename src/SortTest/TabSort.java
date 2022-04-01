@@ -1,3 +1,5 @@
+package SortTest;
+
 import java.util.Arrays;
 
 public class TabSort {

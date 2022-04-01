@@ -2,7 +2,7 @@ package SortTest;
 
 import java.util.Arrays;
 
-public class TabSort {
+public class TabSort implements Runnable {
 	private Long[] tab;
 
 	public TabSort(int size) {
@@ -52,5 +52,10 @@ public class TabSort {
 					return false;
 		}
 		return true;
+	}
+
+	@Override
+	public void run() {
+		this.sort();
 	}
 }
